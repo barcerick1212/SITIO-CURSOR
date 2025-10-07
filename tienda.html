@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Urban Life RP - Tienda</title>
+    <meta name="description" content="Tienda por categorías: Armas VIP, Negocios, Ilegales, Ropa, Carros." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">Urban Life RP</a>
+        <nav class="nav">
+          <a href="index.html" data-nav>Inicio</a>
+          <a href="tienda.html" data-nav>Tienda</a>
+          <a href="servicios.html" data-nav>Servicios</a>
+          <a href="quienes-somos.html" data-nav>Quiénes somos</a>
+          <a href="contacto.html" data-nav>Contacto</a>
+        </nav>
+        <div class="profile" id="profileArea"></div>
+      </div>
+    </header>
+
+    <main class="container section">
+      <h1 class="page-title">Tienda</h1>
+      <p class="lead">Explora por categorías</p>
+
+      <div class="tabs" style="margin-bottom: 12px; flex-wrap: wrap;">
+        <button class="tab active" data-cat="Armas VIP">Armas VIP</button>
+        <button class="tab" data-cat="Negocios">Negocios</button>
+        <button class="tab" data-cat="Ilegales">Ilegales</button>
+        <button class="tab" data-cat="Ropa">Ropa</button>
+        <button class="tab" data-cat="Carros">Carros</button>
+      </div>
+
+      <div id="gridTienda" class="grid products"></div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Urban Life RP. Todos los derechos reservados.</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="X">X</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+  </html>
+
+

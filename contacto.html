@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Urban Life RP - Contacto</title>
+    <meta name="description" content="Contáctanos para soporte o cotizaciones de recursos FiveM." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">Urban Life RP</a>
+        <nav class="nav">
+          <a href="index.html" data-nav>Inicio</a>
+          <a href="tienda.html" data-nav>Tienda</a>
+          <a href="servicios.html" data-nav>Servicios</a>
+          <a href="quienes-somos.html" data-nav>Quiénes somos</a>
+          <a href="contacto.html" data-nav>Contacto</a>
+        </nav>
+        <div class="profile" id="profileArea"></div>
+      </div>
+    </header>
+
+    <main class="container section">
+      <h1 class="page-title">Contacto</h1>
+      <p class="lead">Escríbenos y te responderemos a la brevedad.</p>
+
+      <form data-contact novalidate>
+        <div>
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+        </div>
+        <div>
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" placeholder="tu@email.com" required />
+        </div>
+        <div>
+          <label for="asunto">Asunto</label>
+          <select id="asunto" name="asunto">
+            <option value="Compra">Compra</option>
+            <option value="Soporte">Soporte</option>
+            <option value="Cotización">Cotización</option>
+          </select>
+        </div>
+        <div>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos qué necesitas" required></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </form>
+
+      <div style="margin-top: 20px;" class="card">
+        <div class="card-body">
+          <h3>También puedes visitarnos</h3>
+          <p>Av. Tecnología 123, Ciudad Digital</p>
+          <p><strong>Horario:</strong> Lun-Vie 9:00 - 18:00</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> TechMarket. Todos los derechos reservados.</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="X">X</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+  </html>
+
+

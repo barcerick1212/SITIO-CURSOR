@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TechMarket - Perfil</title>
+    <meta name="description" content="Configura tu perfil, seguridad y tarjetas guardadas." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">TechMarket</a>
+        <nav class="nav">
+          <a href="index.html" data-nav>Inicio</a>
+          <a href="servicios.html" data-nav>Servicios</a>
+          <a href="quienes-somos.html" data-nav>Quiénes somos</a>
+          <a href="contacto.html" data-nav>Contacto</a>
+        </nav>
+        <div class="profile" id="profileArea"></div>
+      </div>
+    </header>
+
+    <main class="container section">
+      <h1 class="page-title">Panel de perfil</h1>
+      <p class="lead">Administra tu información personal y seguridad.</p>
+
+      <div class="grid" style="grid-template-columns: 260px 1fr; align-items: start;">
+        <aside class="card" style="overflow: hidden;">
+          <div class="card-body">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <div class="avatar" id="profileAvatar">U</div>
+              <div>
+                <div id="profileName" style="font-weight:700;">Usuario</div>
+                <div id="profileEmail" style="color:var(--muted); font-size:14px;">usuario@email.com</div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown" style="position: static; display:block; border:0; border-radius:0; box-shadow:none;">
+            <a href="#datos">Datos personales</a>
+            <a href="#seguridad">Contraseña</a>
+            <a href="#foto">Foto</a>
+            <a href="#tarjetas">Tarjetas</a>
+          </div>
+        </aside>
+
+        <section class="card" style="padding: 12px;">
+          <div class="card-body">
+            <h2 id="datos" class="section-title">Datos personales</h2>
+            <form id="formDatos">
+              <div>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" />
+              </div>
+              <div>
+                <label for="correo">Correo</label>
+                <input id="correo" name="correo" type="email" placeholder="tu@email.com" />
+              </div>
+              <button class="btn btn-primary" type="submit">Guardar cambios</button>
+            </form>
+
+            <h2 id="seguridad" class="section-title" style="margin-top:20px;">Contraseña</h2>
+            <form id="formPassword">
+              <div>
+                <label for="passActual">Contraseña actual</label>
+                <input id="passActual" name="passActual" type="password" />
+              </div>
+              <div>
+                <label for="passNueva">Nueva contraseña</label>
+                <input id="passNueva" name="passNueva" type="password" />
+              </div>
+              <button class="btn btn-primary" type="submit">Actualizar contraseña</button>
+            </form>
+
+            <h2 id="foto" class="section-title" style="margin-top:20px;">Foto</h2>
+            <form id="formFoto">
+              <div>
+                <label for="fotoUrl">URL de la foto</label>
+                <input id="fotoUrl" name="fotoUrl" type="url" placeholder="https://..." />
+              </div>
+              <button class="btn btn-secondary" type="submit">Actualizar foto</button>
+            </form>
+
+            <h2 id="tarjetas" class="section-title" style="margin-top:20px;">Tarjetas guardadas</h2>
+            <form id="formTarjeta">
+              <div>
+                <label for="cardAlias">Alias</label>
+                <input id="cardAlias" name="cardAlias" type="text" placeholder="Mi Visa" />
+              </div>
+              <div>
+                <label for="cardMasked">Número (enmascarado)</label>
+                <input id="cardMasked" name="cardMasked" type="text" placeholder="**** **** **** 1234" />
+              </div>
+              <button class="btn btn-secondary" type="submit">Añadir tarjeta</button>
+            </form>
+            <div id="listaTarjetas" style="margin-top:10px; display:grid; gap:8px;"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> TechMarket. Todos los derechos reservados.</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="X">X</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+  </html>
+
+
